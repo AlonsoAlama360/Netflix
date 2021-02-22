@@ -184,6 +184,15 @@
                         overflow-x: auto;
                     }
                     
+                    .list-content::-webkit-scrollbar {
+                        height: 6px;
+                    }
+                    
+                    .list-content::-webkit-scrollbar-thumb {
+                        background: #181818;
+                        border-radius: 10px;
+                    }
+                    
                     .list-item {
                         display: inline-block;
                         margin-left: 1px;
