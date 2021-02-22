@@ -18,6 +18,7 @@
                         padding: 0;
                         margin: 0;
                         font-family: netflix, Arial, Helvetica, sans-serif;
+                        /* padding-bottom: 70px; */
                     }
                     /* .credits {
         font-family: system-ui;
@@ -92,7 +93,7 @@
                         padding: 0;
                     }
                     
-                    @media screen and (min-width:500px) {
+                    @media screen and (min-width:1030px) {
                         .tags {
                             font-size: 18px;
                         }
@@ -101,6 +102,9 @@
                         }
                         video {
                             width: 100%;
+                        }
+                        .list {
+                            margin: auto;
                         }
                     }
                     
@@ -185,7 +189,8 @@
                         margin-left: 1px;
                     }
                     
-                    .list-item:first-child {
+                    .list-item:first-child,
+                    .list-item:last-child {
                         margin: 0;
                     }
                     
@@ -200,4 +205,47 @@
                         flex-direction: column;
                         gap: 20px;
                         justify-content: center;
+                    }
+                    
+                    .footer {
+                        position: sticky;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        background: #000;
+                        padding: 1em 0 0 0;
+                    }
+                    
+                    .tab-list {
+                        margin: 0;
+                        padding: 0;
+                        display: grid;
+                        grid-auto-flow: column;
+                        list-style: none;
+                        color: #6e6e6e;
+                        padding-bottom: 1em;
+                    }
+                    
+                    .tab-list a {
+                        color: #6e6e6e;
+                    }
+                    
+                    .tab-item {
+                        text-align: center;
+                        font-size: .9em;
+                    }
+                    
+                    .tab-item svg {
+                        display: block;
+                        margin: auto;
+                    }
+                    
+                    .tab-item path {
+                        fill: #6e6e6e;
+                    }
+                    
+                    .tab-item:hover :is(path,
+                    span) {
+                        fill: #fff;
+                        color: #fff;
                     }
